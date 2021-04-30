@@ -46,7 +46,6 @@ export const Dashboard = () => {
     };
     window.addEventListener('scroll', onScroll);
     if (window.innerHeight + scroll >= element.clientHeight) {
-      console.log(loading);
       if (!loading) {
         setIsLoading(true);
         setOffset((current) => Number(current) + 25);
